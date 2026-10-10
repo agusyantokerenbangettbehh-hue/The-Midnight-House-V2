@@ -1,0 +1,129 @@
+/** BODY **/
+body {
+  font-family: tahoma, sans-serif;
+  background-color: #111111;
+  color: #E5E5E5;
+  margin: 0;
+  padding: 20px;
+}
+
+/** HEADER **/
+.header {
+  position: relative;
+  border: 4px solid #AFAFAF;
+  border-radius: 0px;
+  padding: 15px;
+  background-color: #151515;
+  text-align: center;
+  box-shadow: 5px 5px 0px #555555;
+  margin-bottom: 25px;
+}
+
+/** JUDUL **/
+h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #F2F2F2;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #E5E5E5;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/** CONTAINER **/
+.container {
+  text-align: center;
+  padding: 25px;
+  border: 4px solid #AFAFAF;
+  border-radius: 0px;
+  background-color: #151515;
+  box-shadow: 6px 6px 0px #555555;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/** SELECT **/
+select {
+  width: 85%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 3px solid #8C8C8C;
+  border-radius: 0px;
+  background-color: #111111;
+  color: #E5E5E5;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 3px 3px 0px #555555;
+  cursor: pointer;
+  outline: none;
+}
+
+/** RANGE **/
+input[type="range"] {
+  width: 85%;
+  height: 12px;
+  background: #111111;
+  border: 3px solid #8C8C8C;
+  border-radius: 0px;
+  outline: none;
+  margin: 15px 0 25px 0;
+  box-shadow: 3px 3px 0px #555555;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #D0D0D0;
+  border: 3px solid #111111;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background: #D0D0D0;
+  border: 3px solid #111111;
+  cursor: pointer;
+}
+
+/** BACK BUTTON **/
+a.btn-back {
+  display: block;
+  width: 80%;
+  margin: 20px auto 5px auto;
+  border: 3px solid #8C8C8C;
+  border-radius: 0px;
+  padding: 10px;
+  background-color: #151515;
+  color: #E5E5E5;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 0px #555555;
+}
+
+a.btn-back:hover {
+  background-color: #D0D0D0;
+  color: #111111;
+}
+
+/** FOOTER **/
+.footer {
+  text-align: center;
+  margin-top: 25px;
+}
+
+/** NOTIFICATION **/
+.pemberitahuan {
+  font-size: 14px;
+  font-weight: bold;
+  color: #BDBDBD;
+}

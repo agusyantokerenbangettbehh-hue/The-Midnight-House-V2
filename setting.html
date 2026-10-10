@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>The House of 404 - Settings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="setting.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>THE HOUSE OF 404 - SETTINGS</h1>
+  </div>
+
+  <div class="container">
+
+    <h2>GRAFIS</h2>
+    <select id="quality" name="graphics">
+      <option value="low">LOW</option>
+      <option value="medium">MEDIUM</option>
+      <option value="high">HIGH</option>
+    </select>
+
+    <h2>SENSITIVITY</h2>
+    <input type="range" id="sensitivity" min="1" max="100" value="50">
+
+    <a href="index.html" class="btn-back">BACK</a>
+
+  </div>
+
+  <div class="footer">
+    <p class="pemberitahuan">&copy; 2026 The House of 404</p>
+  </div>
+
+  <script>
+    const quality = document.getElementById("quality");
+    const sens = document.getElementById("sensitivity");
+
+    quality.value = localStorage.getItem("graphicQuality") || "medium";
+    sens.value = localStorage.getItem("lookSensitivity") || "50";
+
+    quality.addEventListener("change", () => {
+      localStorage.setItem("graphicQuality", quality.value);
+    });
+
+    sens.addEventListener("input", () => {
+      localStorage.setItem("lookSensitivity", sens.value);
+    });
+  </script>
+
+</body>
+</html>

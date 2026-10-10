@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>The House of 404</title>
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+<div id="game-area"></div>
+
+<div id="ui">
+  <div id="top">
+    <div id="objectiveWrap"><div id="objectiveDot"></div><div id="objective">Memuat...</div></div>
+    <div id="timerWrap"><div id="timer">01:00</div></div>
+  </div>
+  <div id="crosshair"><span></span></div>
+  <div id="status">
+    <div id="flashlightStatus" class="pill">FLASHLIGHT: OFF</div>
+    <div id="inventory" class="pill">INVENTORY: KOSONG</div>
+  </div>
+  <div id="wallet">Rp 0</div>
+  <div id="message"></div>
+
+  <div id="joystick"><div id="joyKnob"></div></div>
+  <div id="lookZone"></div>
+  <button id="runBtn">RUN</button>
+  <button id="interactBtn" style="display:none;">E</button>
+  <button id="flashBtn">💡</button>
+  <button id="phoneBtn">📱<span id="phoneBadge">0</span></button>
+</div>
+
+<div id="cartHud">🛒 <span id="cartCount">0</span> item · <span id="cartTotal">Rp 0</span></div>
+
+<div id="phonePanel">
+  <div class="phone-inner">
+    <div class="phone-header">
+      <span id="phoneTime">--:--</span>
+      <button id="phoneClose">✕</button>
+    </div>
+    <div id="phoneMessages"></div>
+  </div>
+</div>
+
+<div id="cutscene">
+  <div class="cutscene-inner">
+    <div class="cutscene-day-row"><div id="cutsceneDay"></div></div>
+    <div class="cutscene-text-row"><div id="cutsceneText"></div></div>
+    <div class="cutscene-hint-row"><div id="cutsceneHint">TAP UNTUK LANJUT</div></div>
+  </div>
+  <div id="dialogBox">
+    <div id="dialogSpeaker"></div>
+    <div id="dialogText"></div>
+    <div id="dialogHint">TAP TO CONTINUE</div>
+  </div>
+</div>
+
+<div id="rainOverlay"></div>
+<div id="bloodOverlay"></div>
+
+<div id="loadingScreen">
+  <div class="loading-inner">
+    <div class="loading-title">THE HOUSE OF 404</div>
+    <div class="loading-bar"><div id="loadingFill"></div></div>
+    <div id="loadingText">Memuat aset...</div>
+  </div>
+</div>
+
+<div id="endingScreen">
+  <div class="ending-card">
+    <div class="ending-accent"></div>
+    <h1 id="endingTitle"></h1>
+    <p id="endingText"></p>
+    <button id="endingButton">MAIN LAGI</button>
+  </div>
+</div>
+
+<script type="module" src="js/game.js?v=5"></script>
+</body>
+</html>
